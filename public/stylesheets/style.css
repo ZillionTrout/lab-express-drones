@@ -1,7 +1,7 @@
 body {
-  padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-  background-color: rgb(29, 28, 28);
+	padding: 50px;
+	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+	background-color: rgb(29, 28, 28);
 }
 
 #menu {
@@ -52,19 +52,19 @@ body {
 }
 
 a {
-  color: #8f4c84;
+	color: #8f4c84;
 }
 
 h1, h2, h3 {
-  color: #722765;
+	color: #722765;
 }
 
 p {
-  color: #8f4c84;
+	color: #8f4c84;
 }
 
-.delete-btn{
-  margin-top: 10px;
+.delete-btn{	
+	margin-top: 10px;
 }
 
 button {
@@ -103,7 +103,7 @@ button:active {
 	font-weight:bold;
 	padding:7px 25px;
 	text-decoration:none;
-  margin-top: 20px;
+	margin-top: 20px;
 }
 .button:hover {
 	background:linear-gradient(to bottom, #5e4452 5%, #ff5bb0 100%);

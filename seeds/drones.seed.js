@@ -1,17 +1,6 @@
 //No se que está mal aquí, terminé metiendo los drones a mano :_)
-
-const Drones = require('../models/Drone.model');
 const mongoose = require('mongoose');
-require("../db");
-
-const MONGO_URI = "mongodb://localhost/lab-express-drones";
-
-mongoose
-    .connect(MONGO_URI)
-    .then((x) =>
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
-    )
-    .catch((err) => console.error("Error connecting to mongo: ", err));
+const Drones = require('../models/Drone.model');
 
 const drones = [
     { name: "Creeper XL 500", propellers: 3, maxSpeed: 12 },
@@ -22,7 +11,7 @@ const drones = [
 Drones.create(drones)
     .then((drones) => {
     console.log(`Created ${drones.length} drones`);
-    mongoose.connection.close();
+    // mongoose.connection.close();
     })
     .catch((err) =>
     console.log(`An error occurred while creating drones from the DB: ${err}`)
